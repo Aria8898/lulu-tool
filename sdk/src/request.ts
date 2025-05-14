@@ -3,7 +3,6 @@ import axios, {
   InternalAxiosRequestConfig,
   AxiosInstance,
   AxiosRequestConfig,
-  AxiosError,
 } from "axios";
 import qs from "qs";
 // 继续请求的处理
