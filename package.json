@@ -1,0 +1,14 @@
+{
+  "name": "tools-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "update": "pnpm --filter ./sdk build && pnpm run i",
+    "dev": "pnpm --filter web dev",
+
+    "i": "pnpm install",
+
+    "login": "npm login",
+    "publish": "npm publish --access public"
+  }
+}

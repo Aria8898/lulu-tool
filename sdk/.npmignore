@@ -1,0 +1,6 @@
+src/
+__tests__/
+*.config.*
+
+# 保留dist目录
+!dist/
