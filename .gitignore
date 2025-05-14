@@ -5,6 +5,7 @@
 /sdk/node_modules
 
 pnpm-lock.yaml
+.build.log
 
 # next.js
 /.next/
