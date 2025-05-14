@@ -1,3 +1,6 @@
+
+export * from './request'
+
 // src/index.js
 const Greeter = (name:string) => {
   console.log('修改233');

@@ -3,10 +3,11 @@ import typescript from '@rollup/plugin-typescript';
 export default {
   input: 'src/index.ts',
   output: {
-    dir: 'dist', // 修正为根目录
+    dir: 'dist',
     format: 'esm',
-    preserveModules: true
-  },
+    preserveModules: true,
+    preserveModulesRoot: 'src'
+  },  
   plugins: [
     typescript({
       declaration: true,

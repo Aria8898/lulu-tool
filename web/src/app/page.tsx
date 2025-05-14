@@ -2,16 +2,22 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import { useState } from "react";
-import { Greeter } from "lulu-sdk-tools";
+import { api } from "lulu-sdk-tools";
 
 
 export default function Home() {
   const [result, setResult] = useState("");
 
   const handleGreet = () => {
-    const name = "UniSat用户";
-    Greeter(name);
-    setResult(`Hello, ${name}! This is your SDK.`);
+    api({
+      baseUrl: '',
+      url: "getConfirmedOps",
+      method: "get"
+    });
+     
+    // const name = "UniSat用户";
+    // Greeter(name);
+    // setResult(`Hello, ${name}! This is your SDK.`);
   };
   return (
     <div className={styles.page}>
