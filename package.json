@@ -9,6 +9,6 @@
     "i": "pnpm install",
 
     "login": "npm login",
-    "publish": "npm publish --access public"
+    "publish": "pnpm --filter ./sdk publish"
   }
 }

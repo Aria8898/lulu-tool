@@ -1,6 +1,6 @@
 {
   "name": "lulu-sdk-tools",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "main": "dist/cjs/index.js",
   "module": "dist/index.js",
@@ -9,7 +9,8 @@
     "dist"
   ],
   "scripts": {
-    "build": "rm -rf dist && rollup -c"
+    "build": "rm -rf dist && rollup -c",
+    "publish": "npm publish --access public"
   },
   "keywords": [],
   "author": "",
